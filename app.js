@@ -1,4 +1,5 @@
-const redirect_uri = 'http://127.0.0.1:5500/';
+// const redirect_uri = 'http://127.0.0.1:5500/';
+const redirect_uri = 'https://borishangh.github.io/spotidash/';
 
 const AUTHOURIZE = 'https://accounts.spotify.com/authorize?';
 const TOKEN = 'https://accounts.spotify.com/api/token?';
@@ -175,6 +176,8 @@ async function call_api(url, access_token) {
 
 async function show_items(access_token, type) {
 	let url, src, heading, subheading = null;
+
+	console.log(data.items[0])
 
 	if (type == 'recents')
 		url = RECENT + '?limit=50';
