@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>spotify dash</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="intro.css">
+</head>
+
+<body>
+	<div class="main">
+		<div class="head">
+			<div class="title">Your Spotify Dash</div>
+			<div class="profile"></div>
+		</div>
+
+		<div class="intro">
+			<div class="text">
+				<h1>Your personal spotify stats</h1>
+				<h2> <span class="underline">straight</span> from the oven.</h2>
+				<h3>
+					<a href="https://www.instagram.com/pigeon.head/" target="_blank" rel="noopener noreferrer"><img class="igicon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Instagram_simple_icon.svg/240px-Instagram_simple_icon.svg.png">&nbsp;hmu</a>
+
+					<a href="https://github.com/borishangh" target="_blank" rel="noopener noreferrer"><img class="giticon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/232px-Font_Awesome_5_brands_github.svg.png">&nbsp;git</a>
+
+					<a href="mailto:borishangh@example.com" target="_blank" rel="noopener noreferrer"><img class="aticon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/At_sign.svg/145px-At_sign.svg.png">&nbsp;borishangh@gmail.com</a>
+
+					<a href="https://www.youtube.com/watch?v=hfATurG-xAo" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/OOjs_UI_icon_heart.svg/20px-OOjs_UI_icon_heart.svg.png" class="❤️">&nbsp;???</a>
+				</h3>
+			</div>
+			<input type="button" value="click here to start" onclick="request_auth()" id="startbtn">
+
+		</div>
+
+		<div class="menucontainer">
+			<div class="menu">
+				<div class="menuelements">
+					<input type="radio" name="select" id="recents">
+					<label for="recents">Recently Played</label>
+				</div>
+				<div class="menuelements">
+					<input type="radio" name="select" id="toptracks" checked>
+					<label for="toptracks">Top Tracks</label>
+				</div>
+				<div class="menuelements">
+					<input type="radio" name="select" id="topartists">
+					<label for="topartists">Top Artists</label>
+				</div>
+			</div>
+
+			<div class="submenu">
+				<div class="submenuelem">
+					<input type="radio" name="timerange" id="short_term">
+					<label for="short_term">Last 4 weeks</label>
+				</div>
+				<div class="submenuelem">
+					<input type="radio" name="timerange" id="medium_term" checked>
+					<label for="medium_term">Last 6 months</label>
+				</div>
+				<div class="submenuelem">
+					<input type="radio" name="timerange" id="long_term">
+					<label for="long_term">All time</label>
+				</div>
+			</div>
+		</div>
+		<div class="gallery"></div>
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.igicon,
+.giticon,
+.aticon, .❤️ {
+    filter: invert(100%);
+    width: 30px;
+    margin-bottom: -8px;
+    padding: 5px;
+}
+
+.text>* {
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.underline {
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+.text>h2 {
+    font-style: italic;
+    font-weight: 200;
+}
+
+.text>h3 {
+    padding-top: 50px;
+}
+
+.text h3>a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: var(--lightgrey);
+    font-weight: 500;
+    font-size: smaller;
+}
+
+.text h3>a:hover {
+    padding-bottom: 7px;
+    border-bottom: 1px dotted var(--lightgrey);
+}
+
+#startbtn {
+    background: var(--green);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 40px;
+    max-width: 80vw;
+    width: 400px;
+    font-size: var(--larger);
+    display: block;
+    margin: 8vh auto;
+    cursor: pointer;
+}
