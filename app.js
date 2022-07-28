@@ -177,8 +177,6 @@ async function call_api(url, access_token) {
 async function show_items(access_token, type) {
 	let url, src, heading, subheading = null;
 
-	console.log(data.items[0])
-
 	if (type == 'recents')
 		url = RECENT + '?limit=50';
 	else if (type == 'topartists')
@@ -187,6 +185,8 @@ async function show_items(access_token, type) {
 		url = TRACKS + `?time_range=${time_range}&limit=50`;
 
 	const data = await call_api(url, access_token);
+	console.log(data.items[0])
+
 
 	for (i in data.items) {
 		let n = parseInt(i) + 1;
